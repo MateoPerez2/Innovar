@@ -1,0 +1,112 @@
+.custom-services-section {
+  background: transparent;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.custom-service-rectangle {
+  display: flex;
+  background-color: rgba(173, 216, 230, 0.2); /* Light blue with opacity */
+  border: 2px solid #00d8f5; /* Light blue border */
+  border-radius: 16px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within bounds */
+  height: 400px; /* Fixed height for the layout */
+}
+
+.custom-text-container {
+  flex: 2.68; /* Allocate space for the text area */
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: -40px;
+  margin-right: 30px;
+}
+
+.custom-section-subtitle {
+  font-size: 1.5rem;
+  color: #00d8f5;
+  margin-bottom: 30px;
+}
+
+.custom-text-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.1fr;
+  gap: 40px;
+}
+
+.custom-text-item {
+  background: transparent;
+}
+
+.custom-service-title {
+  font-size: 1.07rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.custom-service-subtitle {
+  font-size: 1.07rem;
+  color: #ffffff;
+  font-weight: 550;
+}
+
+.custom-image-container {
+  flex: 1; /* Allocate less space for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Fill the entire height of the rectangle */
+}
+
+.custom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-service-rectangle {
+    flex-direction: column; /* Change to vertical layout */
+    height: auto; /* Auto height to accommodate content */
+    padding: 20px; /* Add padding for better spacing */
+    
+  }
+
+  .custom-text-container {
+    margin: 0; /* Reset margins for a cleaner layout */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center text for mobile */
+  }
+
+  .custom-section-subtitle {
+    font-size: 1.2rem; /* Adjust subtitle size */
+    margin-bottom: 20px; /* Reduce bottom margin */
+    text-align: left;
+  }
+
+  .custom-text-grid {
+    grid-template-columns: 1fr; /* Single column grid */
+    gap: 20px; /* Reduce gap between items */
+  }
+
+  .custom-service-title,
+  .custom-service-subtitle {
+    font-size: 1rem; /* Adjust font sizes for mobile */
+    text-align: left;
+  }
+
+  .custom-image-container {
+    width: 100%; /* Full width for image */
+    height: 200px; /* Adjust height for mobile */
+    margin-top: 20px; /* Add spacing above image */
+    text-align: left;
+  }
+}

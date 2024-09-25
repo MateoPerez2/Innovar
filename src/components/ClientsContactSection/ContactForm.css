@@ -1,0 +1,144 @@
+.contact-form-wrapper {
+  background-color: #defbff; /* Full-width light blue background color */
+  width: 100%;
+  padding: 40px 0; /* Add padding for spacing */
+}
+
+.contact-section-last {
+  width: 100%;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent; /* Transparent to let the blue show through */
+}
+
+.contact-form-title {
+  color: #0b0b57;
+  font-size: 28px;
+  font-weight: 550;
+  margin-bottom: 40px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.contact-form .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.contact-form .form-group:last-child {
+  margin-right: 0;
+}
+
+.contact-form label {
+  color: #0b0b57;
+  font-weight: semibold;
+  text-align: start;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  font-weight: semibold;
+  font-size: 14px;
+}
+
+.contact-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ae00ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: semibold;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.contact-form .button-text {
+  margin-right: 10px;
+}
+
+.contact-form .icon-send,
+.contact-form .icon-check {
+  display: inline-block;
+}
+
+.contact-form .icon-send {
+  font-size: 18px;
+}
+
+.contact-form .icon-check {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form .button-text.loading {
+  animation: loading 0.6s infinite;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.whatsapp-button svg {
+  margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57; /* Darker WhatsApp green */
+}
+
+
+@keyframes loading {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

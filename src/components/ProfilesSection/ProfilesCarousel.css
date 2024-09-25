@@ -1,0 +1,93 @@
+.profiles-grid {
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.titleProfile {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 46px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  letter-spacing: -0.01em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding to create space on the sides */
+}
+
+.profile-card {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: opacity 0.5s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 100%;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.profile-name-link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.profile-card h2 {
+  margin: -10px;
+  font-size: 1.5em;
+  text-align: left;
+  width: auto;
+}
+
+.linkedin-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.profile-card p {
+  font-size: 0.9rem;
+  line-height: 1.4em;
+  text-align: left;
+  width: 100%;
+  margin: 5px 0;
+  margin-top: 3px;
+  margin-left: 0px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

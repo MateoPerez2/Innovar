@@ -1,0 +1,125 @@
+.service-text-map-unique {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the entire content horizontally */
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1400px; /* Restrict the maximum width of the container */
+  margin: 0 auto;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+.svg-line-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the line */
+  margin-bottom: 70px; /* Add space below the line */
+  margin-top: 100px;
+}
+
+.service-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.service-text-map-content-unique {
+  flex: 1;
+  z-index: 1;
+}
+
+.service-text-map-content-unique h2 {
+  font-size: 46px;
+  color: #ffff;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  text-align: start; /* Keep the original text alignment */
+  max-width: 90%;
+}
+
+.service-text-map-content-unique p {
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+  text-align: start; /* Keep the original text alignment */
+  max-width: 80%;
+}
+
+.service-text-map-content-unique .locations-unique {
+  font-size: 1.2rem;
+  color: #00d7f4;
+  text-align: start; /* Keep the original text alignment */
+  word-wrap: break-word; /* Ensure text wraps within the container */
+}
+
+.service-text-map-content-unique .locations-unique span {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.service-text-map-image-unique {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.service-text-map-image-unique img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .service-content-container {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .service-text-map-content-unique {
+    position: relative; /* Change to relative for stacking */
+    top: 0; /* Reset top positioning */
+    left: 0; /* Reset left positioning */
+    transform: none; /* Remove transform */
+    text-align: center; /* Center text on smaller screens */
+    padding: 0rem;
+    z-index: 2;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add space below content */
+  }
+
+  .service-text-map-content-unique h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: start; /* Keep original text alignment */
+  }
+
+  .service-text-map-content-unique p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    text-align: start; /* Keep original text alignment */
+  }
+
+  .service-text-map-content-unique .locations-unique {
+    white-space: normal; /* Ensure text wraps within the container */
+  }
+
+  .service-text-map-image-unique {
+    margin-top: 20px; /* Add space above the image */
+  }
+
+  .service-text-map-image-unique img {
+    max-width: 100%;
+    height: auto;
+  }
+}

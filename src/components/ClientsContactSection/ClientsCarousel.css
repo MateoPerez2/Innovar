@@ -1,0 +1,117 @@
+.clients-carousel .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Set a fixed height to center the images vertically */
+  transition: transform 0.3s ease;
+}
+
+.contact-carousel-title {
+  color: #0b0b57;
+  font-size: 30px;
+  font-weight: 550;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  text-align: center;
+  margin-left: -5px;
+  padding-top: 50px;
+}
+
+.clients-carousel .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.clients-carousel .slick-slide img {
+  max-width: 150px;
+  max-height: 100px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  object-fit: contain; /* Ensure images are resized while maintaining aspect ratio */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+  display: none;
+}
+
+.clients-carousel .slick-prev,
+.clients-carousel .slick-next {
+  width: auto; /* Remove default slick width */
+  height: auto; /* Remove default slick height */
+  z-index: 2;
+}
+
+.clients-carousel .slick-prev {
+  left: 10px; /* Position left arrow */
+}
+
+.clients-carousel .slick-next {
+  right: 10px; /* Position right arrow */
+}
+
+/* Zoom Control using CSS Classes */
+.zoom-small img {
+  transform: scale(1.6); /* Slight zoom in */
+}
+
+.zoom-medium img {
+  transform: scale(1.3); /* Medium zoom in */
+}
+
+.zoom-large img {
+  transform: scale(1.1); /* Large zoom in */
+}
+
+.name-mirgor img {
+  
+  margin-top: -50px;
+  
+}
+
+.zoom-extralarge img {
+  transform: scale(0.9); /* Large zoom in */
+}
+
+.zoom-extralargee img {
+  transform: scale(0.75); /* Large zoom in */
+}
+
+.clients-carousel .slick-slide:hover img {
+  filter: grayscale(0%);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+  .clients-carousel .slick-slide {
+    height: 130px; /* Adjust height for different screen sizes */
+  }
+  .clients-carousel .slick-slide img {
+    max-width: 130px;
+    max-height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-carousel .slick-slide {
+    height: 100px; /* Adjust height for different screen sizes */
+  }
+  .clients-carousel .slick-slide img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-carousel .slick-slide {
+    height: 80px; /* Adjust height for different screen sizes */
+  }
+  .clients-carousel .slick-slide img {
+    max-width: 80px;
+    max-height: 50px;
+  }
+}

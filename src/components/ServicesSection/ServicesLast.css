@@ -1,0 +1,91 @@
+.services-last-section {
+  background: transparent;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-last-item {
+  display: flex;
+  background-color: rgba(173, 216, 230, 0.2); /* Light blue with opacity */
+  border: 2px solid #00d8f5; /* Light blue border */
+  border-radius: 16px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within bounds */
+  height: 400px; /* Fixed height for the layout */
+  width: 100%; /* Full width for container */
+}
+
+.services-last-text {
+  flex: 1; /* Allocate space for the text area */
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-right: 30px;
+}
+
+.services-last-text h3 {
+  font-size: 1.5rem;
+  color: #00d8f4;
+  margin-bottom: 30px;
+  margin-top: -70px;
+  max-width: 70%;
+}
+
+.services-last-text p {
+  font-size: 1.07rem;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.services-last-image {
+  flex: 1; /* Allocate less space for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Fill the entire height of the rectangle */
+}
+
+.services-last-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-last-item {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Auto height for responsiveness */
+  }
+
+  .services-last-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image */
+  }
+
+  .services-last-text {
+    text-align: center;
+    margin-left: 0; /* Center the text */
+    margin-right: 0; /* Center the text */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .services-last-text h3 {
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 10px; /* Adjust bottom margin */
+    max-width: 100%; /* Ensure the title uses full width */
+  }
+
+  .services-last-text p {
+    max-width: 100%; /* Ensure the paragraph uses full width */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    text-align: left;
+  }
+}

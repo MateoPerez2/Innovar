@@ -1,0 +1,270 @@
+.about-us {
+  padding: 5% 2%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.about-us-title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.about-us-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.profiles-section {
+  background: linear-gradient(-45deg, 
+  #C800FF 3%, 
+  #5D0396 20%, 
+  #44047E 26%, 
+  #270462 36%, 
+  #230460 40%, 
+  #1C045C 49%, 
+  #1A1468 78%, 
+  #0A74AD 100%
+);  padding: 2.6% 1%;
+  text-align: center;
+}
+
+.seccion-title {
+  font-size: 2.7rem;
+  color: #ffffff;
+  margin-bottom: 1.6%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profiles-container {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile {
+  position: relative;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.profile-content {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 45vw; /* Increase the height for a more vertical appearance */
+}
+
+.profile-image {
+  width: 100%;
+  height: 80%; /* Occupies 80% of the profile's height */
+  object-fit: cover; /* Ensures the image covers the allocated space */
+  border-radius: 0;
+}
+
+.profile-info {
+  padding: 2%;
+  height: 20%; /* Remaining space for text */
+}
+
+.profile-name {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 7px;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.profile-subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 3%;
+}
+
+.cv-section {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #333;
+  padding: 4%;
+  border-radius: 0;
+  transition: top 0.5s ease-in-out;
+  text-align: left;
+}
+
+.linkedin-container {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.linkedin-container svg {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1000px;
+}
+
+.profile-content.show .cv-section {
+  top: 0;
+}
+
+.more-info-button {
+  position: absolute;
+  bottom: 0%;
+  right: 2.1%;
+  width: 8%;
+  height: 8%;
+  cursor: pointer;
+}
+
+.more-info-button svg {
+  width: 100%;
+  height: 100%;
+}
+
+.more-info-button:hover svg circle {
+  fill: #00b3d4;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 2.2rem;
+  }
+
+  .about-us-description {
+    font-size: 1.3rem;
+    padding: 0 5%;
+  }
+
+  .profiles-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    width: 90%;
+  }
+
+  .profile-content {
+    height: auto;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+
+  .profile-name,
+  .profile-subtitle {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .cv-section {
+    text-align: center;
+  }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .about-us-title {
+    font-size: 2.5rem;
+  }
+
+  .about-us-description {
+    font-size: 1.4rem;
+  }
+
+  .profiles-container {
+    gap: 5%;
+  }
+
+  .profile {
+    width: 32%; /* Increased width for profiles on mid-sized screens */
+  }
+
+  .profile-content {
+    height: 52vw; /* Taller profile for mid-sized screens */
+  }
+
+  .profile-image {
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the allocated space */
+  }
+
+  .profile-info {
+    padding: 2%;
+    height: 20%; /* Remaining space for text */
+    text-align: left;
+    
+  }
+
+  .profile-name,
+  .profile-subtitle {
+    text-align: left;
+    margin-left: 0;
+  }
+  .cv-section{
+    font-size: 0.859rem;
+    text-align: left;
+  }
+}
+
+/* Larger Desktops */
+@media (min-width: 1201px) {
+  .about-us-title {
+    font-size: 2.7rem;
+  }
+
+  .about-us-description {
+    font-size: 1.6rem;
+  }
+
+  .profiles-container {
+    gap: 5%; /* Reduced gap to allow more space for wider profiles */
+  }
+
+  .profile {
+    width: 24%; /* Increased width for profiles on larger screens */
+  }
+
+  .profile-content {
+    height: 40vw; /* Adjusted height to maintain proportion */
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 80%; /* Image height remains at 80% of the profile height */
+    object-fit: cover; /* Ensures the image covers the allocated space */
+  }
+
+  .profile-info {
+    padding: 1%;
+    height: 20%; /* Remaining space for text */
+  }
+
+  .profile-name,
+  .profile-subtitle {
+    text-align: left;
+    margin-left: 3%;
+  }
+}
