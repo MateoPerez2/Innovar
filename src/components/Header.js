@@ -17,7 +17,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="logo">
           <img
-            src={require('/Users/mateoperez/Documents/Web InnovAr/my-react-app copy/src/assets/Capa_1 (1).png')}
+            src={require('../assets/Capa_1 (1).png')}
             alt="InnovAr Logo"
           />
         </div>
